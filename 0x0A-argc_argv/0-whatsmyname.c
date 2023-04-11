@@ -1,11 +1,18 @@
 #include <stdio.h>
 
-int main(int argc, char *argv[]) {
-    /* Mark argc as unused to avoid the warning */
-    (void)argc;
-    
-    /* argv[0] contains the name of the program */
-    printf("%s\n", argv[0]);
-    
-    return 0;
+/**
+ * main - Entry point of the program
+ * Description: Prints the name of the program (the first command line
+ * argument), followed by a new line.
+ * @argc: Number of command line arguments
+ * @argv: Array of strings containing the command line arguments
+ * Return: 0 (Success)
+ */
+int main(int argc __attribute__((unused)), char *argv[])
+{
+	/* Print the name of the program */
+	printf("%s\n", argv[0]);
+
+	/* Return 0 to indicate successful termination */
+	return 0;
 }
