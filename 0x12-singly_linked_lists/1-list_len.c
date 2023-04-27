@@ -10,8 +10,10 @@
 
 size_t list_len(const list_t *h)
 { 
-    if (h == NULL) 
-         return 0; 
-  
-    return 1 + list_len(h->next); 
+    size_t count = 0; 
+    while (h != NULL) { 
+        count++; 
+        h = h->next; 
+    } 
+    return count; 
 }
