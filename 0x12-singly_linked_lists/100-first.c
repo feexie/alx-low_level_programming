@@ -1,12 +1,13 @@
 #include <stdio.h>
 
-void first(void)__attribute__((constructor));
-
+void __attribute__ ((constructor)) print_text();
 /**
- * turtle - prints a quote about turtles before main function
+ * print_text - this function prints the text given after the main function
+ *
+ * Return: nothing.
  */
-void first(void)
+void print_text(void)
 {
-    printf("Why did the turtle cross the road?\n");
-    printf("To get to the Shell Station!\n");
+	printf("You're beat! and yet, you must allow,\n");
+	printf("I bore my house upon my back!\n");
 }
