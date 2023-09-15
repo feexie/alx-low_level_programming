@@ -8,14 +8,14 @@
  */
 size_t dlistint_len(const dlistint_t *h)
 {
-    size_t count = 0; // Initialize a count variable to keep track of elements
+    size_t count = 0;
 
     while (h != NULL)
     {
-        count++; // Increment the count for each element in the list
-        h = h->next; // Move to the next element
+        count++;
+        h = h->next;
     }
 
-    return count; // Return the number of elements
+    return count;
 }
 
